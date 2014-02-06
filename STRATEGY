@@ -1,0 +1,29 @@
+1.	Grab links to all stories from http://slashdot.org/archive.pl?op=bytime.
+
+	Each story will generate a URL like
+
+		http://yro.slashdot.org/story/14/02/02/224229/press-used-to-print-millions-of-us-banknotes-seized-in-quebec
+
+
+2. 	For now, retrieve all comments in D1 (classic discussion system) style.
+	Why? Because it doesn't require Javascript manipulation to do a good job.
+
+	We will browse at -1 threshold, threaded mode, oldest first.
+
+	D1's URL follows the following pattern:
+
+		http://{SUBDOMAIN}.slashdot.org/comments.pl?threshold=-1&mode=thread&commentsort=0&sid=STORY_ID
+
+	where STORY_ID is in a hidden field named sid on the story page.
+	(They'll have to be extracted.)
+
+3.	Each page of comments has further links:
+	
+		a. comments deeper in the discussion thread
+		b. permalinks to each comment
+
+	Both links must also be crawled and saved.
+
+	For 3(a), we need to look for links that have a pid parameter in them,
+	save those pages, and save permalink pages for each comment.
+	For 3(b), we need to save the permalink pages to each comment.
