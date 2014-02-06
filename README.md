@@ -15,7 +15,7 @@ In most of the below cases, there will be a web interface running at http://loca
 Running with a warrior
 -------------------------
 
-Follow the [instructions on the ArchiveTeam wiki](http://archiveteam.org/index.php?title=Warrior) for installing the Warrior, and select the "{{Slashdot}}" project in the Warrior interface.
+Follow the [instructions on the ArchiveTeam wiki](http://archiveteam.org/index.php?title=Warrior) for installing the Warrior, and select the "Slashdot" project in the Warrior interface.
 
 Running without a warrior
 -------------------------
@@ -142,4 +142,4 @@ Are you a developer? Help write code for us! Look at our [developer documentatio
 
 ### Other problems
 
-Have an issue not listed here? Join us on IRC and ask! We can be found at irc.efnet.org #{{IRC_CHANNEL}}.
+Have an issue not listed here? Join us on IRC and ask! We can be found at irc.efnet.org #slashdocs.
