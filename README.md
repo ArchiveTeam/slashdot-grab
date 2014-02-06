@@ -1,9 +1,7 @@
-This is an example project for the new Seesaw kit / Warrior. It has tasks that do nothing but sleep for a few seconds.
-=======
-{{REPO_NAME}}
+slashdot-grab
 =============
 
-More information about the archiving project can be found on the ArchiveTeam wiki: [{{PROJECT_NAME}}](http://archiveteam.org/index.php?title={{PROJECT_NAME}})
+More information about the archiving project can be found on the ArchiveTeam wiki: [{{Slashdot}}](http://archiveteam.org/index.php?title={{Slashdot}})
 
 Setup instructions
 =========================
@@ -17,7 +15,7 @@ In most of the below cases, there will be a web interface running at http://loca
 Running with a warrior
 -------------------------
 
-Follow the [instructions on the ArchiveTeam wiki](http://archiveteam.org/index.php?title=Warrior) for installing the Warrior, and select the "{{PROJECT_NAME}}" project in the Warrior interface.
+Follow the [instructions on the ArchiveTeam wiki](http://archiveteam.org/index.php?title=Warrior) for installing the Warrior, and select the "{{Slashdot}}" project in the Warrior interface.
 
 Running without a warrior
 -------------------------
@@ -60,8 +58,8 @@ Distribution-specific setup
     adduser --system --group --shell /bin/bash archiveteam
     apt-get install -y git-core libgnutls-dev lua5.1 liblua5.1-0 liblua5.1-0-dev screen python-dev python-pip bzip2 zlib1g-dev
     pip install seesaw
-    su -c "cd /home/archiveteam; git clone https://github.com/ArchiveTeam/{{REPO_NAME}}.git; cd {{REPO_NAME}}; ./get-wget-lua.sh" archiveteam
-    screen su -c "cd /home/archiveteam/{{REPO_NAME}}/; run-pipeline pipeline.py --concurrent 2 --address '127.0.0.1' YOURNICKHERE" archiveteam
+    su -c "cd /home/archiveteam; git clone https://github.com/ArchiveTeam/slashdot-grab.git; cd slashdot-grab; ./get-wget-lua.sh" archiveteam
+    screen su -c "cd /home/archiveteam/slashdot-grab/; run-pipeline pipeline.py --concurrent 2 --address '127.0.0.1' YOURNICKHERE" archiveteam
     [... ctrl+A D to detach ...]
 
 Wget-lua is also available on [ArchiveTeam's PPA](https://launchpad.net/~archiveteam/+archive/wget-lua) for Ubuntu.
@@ -88,7 +86,7 @@ You need Homebrew. Ensure that you have the OS X equivalent of bzip2 installed a
     pip install seesaw
     [... pretty much the same as above ...]
 
-**There is a known issue with some packaged versions of rsync. If you get errors during the upload stage, {{REPO_NAME}} will not work with your rsync version.**
+**There is a known issue with some packaged versions of rsync. If you get errors during the upload stage, slashdot-grab will not work with your rsync version.**
 
 This supposedly fixes it:
 
@@ -103,7 +101,7 @@ Ensure that you have the Arch equivalent of bzip2 installed as well.
 3. Run `pip2 install seesaw`.
 4. Modify the run-pipeline script in seesaw to point at `#!/usr/bin/python2` instead of `#!/usr/bin/python`.
 5. `adduser --system --group --shell /bin/bash archiveteam`
-6. `screen su -c "cd /home/archiveteam/{{REPO_NAME}}/; run-pipeline pipeline.py --concurrent 2 --address '127.0.0.1' YOURNICKHERE" archiveteam`
+6. `screen su -c "cd /home/archiveteam/slashdot-grab/; run-pipeline pipeline.py --concurrent 2 --address '127.0.0.1' YOURNICKHERE" archiveteam`
 
 ### For FreeBSD:
 
