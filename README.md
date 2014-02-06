@@ -1,7 +1,7 @@
 slashdot-grab
 =============
 
-More information about the archiving project can be found on the ArchiveTeam wiki: [{{Slashdot}}](http://archiveteam.org/index.php?title={{Slashdot}})
+More information about the archiving project can be found on the ArchiveTeam wiki: [Slashdot](http://archiveteam.org/index.php?title=Slashdot)
 
 Setup instructions
 =========================
